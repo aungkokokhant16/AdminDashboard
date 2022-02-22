@@ -14,25 +14,122 @@
 
     <section class="main container-fluid ">
         <div class="row">
-            <div class="col-12 col-md-3 col-lg-2 col-xl-2 vh-100 sidebar d-none d-lg-block">
-                <div class="hide-sidebar-btn btn-link ">
-                    <i data-feather="x" class=" text-primary" style="font-size: 2em;"></i>
+            <div class="col-12  col-lg-3 col-xl-2 vh-100 sidebar  ">
+                <div class="d-flex justify-content-between align-items-center py-2 mt-3">
+                    <div class="d-flex align-items-center ">
+                        <span class="bg-primary p-2 rounded d-flex justify-content-center align-items-center ">
+                            <i data-feather="shopping-bag" class=" text-white mb-0 h4"></i>
+                        </span>
+                        <span class=" fw-bolder h4 mb-0 ms-2 text-uppercase text-primary fw-bolder">My shop</span>
+                    </div>
+                    <button class="hide-sidebar-btn btn btn-light d-block d-lg-none ">
+                        <i data-feather="x" class=" text-primary" style="font-size: 2em;"></i>
+                    </button>
                 </div>
+
             </div>
-            <div class="col-12 col-md-9 col-lg-10 col-xl-10 vh-100 content">
+            <div class="col-12  col-lg-9 col-xl-10 vh-100 content ">
                 <div class="row header">
-                    <div class="col-12">
-                        <div class="p-2 bg-primary rounded">
-                            <div class="show-sidebar-btn btn-link ">
+                    <div class="col-12 mt-3">
+                        <div class="p-2 bg-primary rounded d-flex justify-content-between align-items-center">
+                            <button class="show-sidebar-btn btn btn-primary d-block d-lg-none ">
                                 <i data-feather="menu" class=" text-light" style="font-size: 2em;"></i>
+                            </button>
+
+                            <form action="" method="post" class="d-none d-md-block">
+                                <div class="form-inline d-flex">
+                                    <input type="text " class="form-control ms-2">
+                                    <button class="btn btn-light">
+                                        <i data-feather="search" class=" text-primary"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/avatar1.jpg" class="user-img shadow-sm" alt=""> Ko Khant
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class=" dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                        <div class="vh-100"></div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card m-3 ">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <i data-feather="shopping-bag" class=" feather-size text-primary "></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="mb-1 fw-bolder h4">
+                                            <span class="counter-up">123</span>
+                                        </p>
+                                        <p class="mb-0 text-black-50">Today order</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card m-3 ">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <i data-feather="users" class=" feather-size text-primary "></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="mb-1 fw-bolder h4">
+                                            <span class="counter-up">455</span>
+                                        </p>
+                                        <p class="mb-0 text-black-50">Today User</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card m-3 ">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <i data-feather="package" class="text-primary feather-size"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="mb-1 fw-bolder h4">
+                                            <span class="counter-up">233</span>
+                                        </p>
+                                        <p class="mb-0 text-black-50">Today Total Items</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card m-3 ">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <i data-feather="map-pin" class="  text-primary feather-size "></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="mb-1 fw-bolder h4">
+                                            <span class="counter-up">14</span>
+                                        </p>
+                                        <p class="mb-0 text-black-50">Support Location</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="col-12">
                         <div class="vh-100 bg-info"></div>
                     </div>
@@ -46,10 +143,18 @@
 
     </section>
 
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/feather-icons/dist/feather.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="js/jqyery.counterup.min.js"></script>
+    <script src="node_modules/feather-icons/dist/feather.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+
+
     <script>
         feather.replace()
     </script>

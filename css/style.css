@@ -10,6 +10,7 @@
 .content {
     background-color: var(--primary-soft);
     overflow: scroll;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) inset;
 }
 
 .header {
@@ -22,6 +23,17 @@
 
 .show-sidebar-btn {
     cursor: pointer;
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.feather-size {
+    width: 40px!important;
+    height: 40px!important;
 }
 
 @media screen and (max-width: 780px) {
